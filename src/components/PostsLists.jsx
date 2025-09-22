@@ -12,7 +12,7 @@ function PostsLists({ isPosting, onStopPosting, postData }) {
   useEffect(() => {
     async function fetchData() {
       setIsFetching(true);
-      const response = await fetch("http://localhost:8080/posts");
+      const response = await fetch("http://ec2-3-108-250-37.ap-south-1.compute.amazonaws.com:8080/posts");
       const res = await response.json();
       setPosts(res.posts);
       setIsFetching(false);
