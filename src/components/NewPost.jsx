@@ -20,7 +20,7 @@ function NewPost({ onCancel, onAddPost }) {
       body: enteredBody,
       author: enteredAuthor,
     };
-    fetch("http://ec2-65-0-178-101.ap-south-1.compute.amazonaws.com:8080/posts", {
+    fetch("http://ec2-13-126-127-121.ap-south-1.compute.amazonaws.com:8080/posts", {
       method: "POST",
       body: JSON.stringify(postData),
       headers: { "Content-type": "application/json" },
