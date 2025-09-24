@@ -12,7 +12,7 @@ function MainHeader({ onCreatePost }) {
     <header className={classes.header}>
       <h1 className={classes.logo}>
         <MdMessage />
-        React Poster
+        Twitter
       </h1>
       <p>
         <button className={classes.button} onClick={addPostHandler}>
